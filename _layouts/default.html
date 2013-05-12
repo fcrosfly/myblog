@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-　　<html>
-　　<head>
-　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-　　　　<title>{{ page.title }}</title>
-　　</head>
-　　<body>
-
-　　　　{{ content }}
-
-　　</body>
-　　</html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{{ page.title }}</title>
+	{\% for css in page.css %\}
+	<link rel="stylesheet" href="{\{ css }\}" type="text/css" />
+	{\% endfor %\}
+</head>
+<body>
+	{{ content }}
+	<!--javascript-->
+	{\% for js in page.javascript %\}
+	<script type="text/javascript" src="{\{ js }\}" ></script>
+	{\% endfor %\}
+</body>
+</html>
