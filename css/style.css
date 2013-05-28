@@ -85,9 +85,9 @@ p{
 #footer{
     text-align: center;
     margin-top: 30px;
-    padding-top:10px;
+    padding-top:20px;
     border-top: 2px solid #EAEAEA;
-    color:#EAEAEA;
+    color: #D1D1D1;
     font-size:15px;
     font-weight:600;
 }
