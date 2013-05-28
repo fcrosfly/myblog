@@ -45,6 +45,7 @@ div#page{
 	background-color: #fff;
 	padding: 40px 70px;
 	border-radius: 10px;
+	border:1px solid #ebebeb;
 }
 
 article,
@@ -72,4 +73,10 @@ h1 {
 
 h2 {
 	font-size: 1.2em;
+}
+
+p{
+    line-height: 1.7em;   
+    text-indent: 2em;
+    font-family: 'Microsoft Yahei', 'Microsoft Jhenghei', STHeiti, PMingLiU, Simsun;
 }
