@@ -96,3 +96,16 @@ p{
     border-bottom: 1px dashed #D1D1D1;
     padding-bottom: 15px;    
 }
+
+a{
+    color: #C9C9C9;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+a:hover{
+    color: #fff;   
+    background-color:#C9C9C9;
+}
