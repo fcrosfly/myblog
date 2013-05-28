@@ -38,9 +38,12 @@ html {
 
 body{
 	background-color: #EBEBEB;
+}
+
+div#page{
 	margin: 40px 100px;
 	background-color: #fff;
-	padding: 30px;
+	padding: 40px 70px;
 	border-radius: 10px;
 }
 
