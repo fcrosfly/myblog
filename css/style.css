@@ -46,6 +46,8 @@ div#page{
 	padding: 40px 70px;
 	border-radius: 10px;
 	border:1px solid #ebebeb;
+	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+	box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
 }
 
 article,
@@ -96,6 +98,11 @@ p{
     border-bottom: 1px dashed #D1D1D1;
     padding-bottom: 15px;    
 }
+
+#index-title{
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #ebebeb;
+	padding-bottom: 20px;
 
 a{
     color: #999999;
