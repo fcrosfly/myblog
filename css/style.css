@@ -109,3 +109,8 @@ a:hover{
     color: #fff;   
     background-color:#D3D3D3;
 }
+
+ul{
+    line-height: 1.5em;
+    margin: 1em 3em;
+}
