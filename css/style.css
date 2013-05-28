@@ -40,6 +40,20 @@ body{
 	background-color: #EBEBEB;
 }
 
+div#sidebar{
+	position: fixed;
+	display: block;
+	width: 30%;
+	top: 40px;
+	right: 52px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding-top: 72px;
+	padding-bottom: 241px;
+	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+	box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+}
+
 div#page{
 	margin: 40px 100px;
 	background-color: #fff;
