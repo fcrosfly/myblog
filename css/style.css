@@ -98,7 +98,7 @@ p{
 }
 
 a{
-    color: #C9C9C9;
+    color: #999999;
     text-decoration: none;
     background-color: #fff;
     border-radius: 3px;
@@ -107,5 +107,5 @@ a{
 
 a:hover{
     color: #fff;   
-    background-color:#C9C9C9;
+    background-color:#D3D3D3;
 }
