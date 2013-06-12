@@ -38,10 +38,33 @@ html {
 
 body{
 	background-color: #EBEBEB;
-	margin: 40px 100px;
+}
+
+div#sidebar{
+	position: fixed;
+	display: block;
+	width: 30%;
+	top: 40px;
+	right: 4%;
 	background-color: #fff;
-	padding: 30px;
 	border-radius: 10px;
+	padding-top: 72px;
+	padding-bottom: 241px;
+	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+	box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+}
+
+div#page{
+	width: 50%;
+	margin-top: 40px;
+	margin-left: 4%;
+	background-color: #fff;
+	padding: 5%;
+	display: block;
+	border-radius: 10px;
+	border: 1px solid #ebebeb;
+	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+	box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
 }
 
 article,
@@ -64,9 +87,66 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 1.4em;
+	font-size: 2em;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.5em;
+}
+
+p{
+    padding-top: 1em;
+    line-height: 1.7em;   
+    text-indent: 2em;
+    font-family: 'Microsoft Yahei', 'Microsoft Jhenghei', STHeiti, PMingLiU, Simsun;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 30px;
+    padding-top:20px;
+    border-top: 1px solid #EAEAEA;
+    color: #D1D1D1;
+    font-size:15px;
+    font-weight:600;
+}
+
+#title{
+    border-bottom: 1px dashed #D1D1D1;
+    padding-bottom: 15px;    
+}
+
+#index-title{
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #ebebeb;
+	padding-bottom: 20px;
+}
+
+a{
+    color: #999999;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+a:hover{
+    color: #fff;   
+    background-color:#D3D3D3;
+}
+
+ul{
+    line-height: 1.5em;
+    margin: 1em 3em;
+}
+
+#photo{
+    margin: 19%;
+    text-align: center;   
+}
+
+#sidebar-title{
+    padding: 3% 5%;
+    border-bottom: 1px dashed #ebebeb;
+    border-top: 1px dashed #ebebeb;
 }
