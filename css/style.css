@@ -45,7 +45,7 @@ div#sidebar{
 	display: block;
 	width: 30%;
 	top: 40px;
-	right: 52px;
+	right: 4%;
 	background-color: #fff;
 	border-radius: 10px;
 	padding-top: 72px;
@@ -57,9 +57,10 @@ div#sidebar{
 div#page{
 	width: 50%;
 	margin-top: 40px;
-	margin-left: 50px;
+	margin-left: 4%;
 	background-color: #fff;
-	padding: 40px 70px;
+	padding: 5%;
+	display: block;
 	border-radius: 10px;
 	border: 1px solid #ebebeb;
 	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
