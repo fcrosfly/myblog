@@ -125,6 +125,8 @@ a{
 a:hover{
     color: #fff;   
     background-color:#D3D3D3;
+    -webkit-transition: color .2s ease-in, background-color .15s ease-out .1s;
+    transition: color .2s ease-in, background-color .15s ease-out .1s;
 }
 
 ul{
