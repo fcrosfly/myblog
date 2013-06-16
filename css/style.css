@@ -120,13 +120,12 @@ a{
     background-color: #fff;
     border-radius: 3px;
     padding: 0px 5px;
-}
-
-a:hover{
-    color: #fff;   
-    background-color:#D3D3D3;
     -webkit-transition: color .2s ease-in, background-color .15s ease-out .1s;
     transition: color .2s ease-in, background-color .15s ease-out .1s;
+}
+a:hover{    
+    color: #fff;       
+    background-color:#D3D3D3;
 }
 
 ul{
@@ -162,8 +161,14 @@ div#sidebar{
     border-radius:100%;    
     -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3);
     box-shadow:0 1px 1px rgba(0,0,0,0.3);
+    -webkit-transition:ease 0.8s;
+    transition:ease 0.8s;
 }
 
+#photo img:hover{
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
 div.sidebar-title{
     padding: 3% 5%;
     border-bottom: 1px dashed #ebebeb;
