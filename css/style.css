@@ -181,3 +181,9 @@ div.brief-profile{
     margin:4%;
     line-height:2em;   
 }
+
+div.demo img{
+    margin: 24px;
+    width: 256px;    
+    border-radius: 6px;    
+}
