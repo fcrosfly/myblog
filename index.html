@@ -14,10 +14,9 @@ title:
 </ul>
 <h2>Demo</h2>
 <ul class="demo">
-	{% for category in site.categories %}
 	<li>
-		<a href="{{ site.baseurl }}{{ post.url }}" title="view all posts">
-		{{ category | first }} {{ category | last | size }}</a>
+		<a href="/myblog/demo/todo_list.html" >
+			<img src="/myblog/image/todo_list.png" title="To-do list">
+		</a>
 	</li>
-	{\% endfor %\}
 </ul>
