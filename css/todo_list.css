@@ -53,7 +53,8 @@ div ul ul li{
     background: #ff76bc;
     line-height:32px;
     padding:0 34px;
-    transition: ease-out 0.15s;
+    transition: ease-out 0.15s;    
+    -webkit-transition: ease-out 0.15s;
 }
 
 div ul ul li:hover{
