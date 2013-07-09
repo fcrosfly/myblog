@@ -20,9 +20,9 @@ div{
 }
 /* To-do List */
 div h2{
-    line-height:70px;
+    line-height: 74px;
     padding:0 18px;
-    width:120px;
+    font-size: 1.7em;
 }
 
 div a{  
@@ -71,16 +71,16 @@ div ul ul.active{
 }*/
 
 input{
-    width:150px;
+    width: 155px;
     height: 30px; 
-    border-radius: 6px;
+    border-radius: 15px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    padding-left: 1em;
+    padding-left: 0.5em;
     font-size: .6em;
 }
 
 span{
-    margin-left: 59px;
-    height: 41px;    
+    position: absolute;
+    margin: 20px 43px auto;    
 }
