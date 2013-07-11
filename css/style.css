@@ -94,6 +94,26 @@ p.booktitle{
 	padding-top: 0em;
 }
 
+ul{
+    line-height: 1.5em;
+    margin: 1em 3em;
+}
+
+a{
+    color: #999999;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 5px;
+    -webkit-transition: color .2s ease-in, background-color .15s ease-out .1s;
+    transition: color .2s ease-in, background-color .15s ease-out .1s;
+}
+
+a:hover{    
+    color: #fff;       
+    background-color:#D3D3D3;
+}
+
 #footer{
     text-align: center;
     margin-top: 30px;
@@ -113,25 +133,6 @@ p.booktitle{
 	margin-bottom: 20px;
 	border-bottom: 1px dashed #ebebeb;
 	padding-bottom: 20px;
-}
-
-a{
-    color: #999999;
-    text-decoration: none;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 0px 5px;
-    -webkit-transition: color .2s ease-in, background-color .15s ease-out .1s;
-    transition: color .2s ease-in, background-color .15s ease-out .1s;
-}
-a:hover{    
-    color: #fff;       
-    background-color:#D3D3D3;
-}
-
-ul{
-    line-height: 1.5em;
-    margin: 1em 3em;
 }
 
 /* sidebar
@@ -194,6 +195,28 @@ div.demo img{
 div#top{
 	display: block;
 	position: fixed;
-	bottom: 0px;
-	right: 0px;	
+	bottom: -44px;
+	right: -45px;	
+	width: 88px;
+	height: 88px;
+    border-radius: 200px;
+    background: rgba(255,255,255,.5);
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+}
+
+div#top:hover{
+    background: rgb(255,255,255);
+}
+
+div#top a {
+    position: absolute;
+    top: 22px;
+    left: 6px;
+    background-color: rgba(255,255,255,0);
+    color: rgba(255,255,255,0.7);
+}
+
+div#top a:hover {
+    color: #999999;
 }
