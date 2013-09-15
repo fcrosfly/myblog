@@ -8,15 +8,15 @@
 </head>
 <body>
 	<ul class="nav">
-  {/% for item in site.menuitems %/}
-    {/% if item.url == page.url %/}
+  {% for item in site.menuitems %}
+    {% if item.url == page.url %}
     <li class="active">
-    {/% else %/}
+    {% else %}
     <li>
-    {/% endif %/}
+    {% endif %}
     <a href=""></a>
     </li>
-  {/% endfor %/}
+  {% endfor %}
 </ul>
 
 
