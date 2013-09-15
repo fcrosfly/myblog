@@ -7,6 +7,19 @@
 	<link type="text/css" rel="stylesheet" href="/myblog/css/style.css" />
 </head>
 <body>
+	<ul class="nav">
+  {/% for item in site.menuitems %/}
+    {/% if item.url == page.url %/}
+    <li class="active">
+    {/% else %/}
+    <li>
+    {/% endif %/}
+    <a href=""></a>
+    </li>
+  {/% endfor %/}
+</ul>
+
+
 	<div id="sidebar">
 		<div id="photo">
 			<img src="/myblog/image/yvonne.jpg" alt="Yvonne Zhang"></div>
