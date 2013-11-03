@@ -2,6 +2,7 @@
 layout: 
 title: To-do List Demo
 category: demo
+tags: demo, to-do list
 ---
 <html>
 <head>
@@ -9,6 +10,11 @@ category: demo
 	<link type="text/css" rel="stylesheet" href="/myblog/css/todo_list.css" />
 </head>
 <body>
+	<div id="article-info">
+		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
+		<p id="num-of-words">{{ page.content | number_of_words }}</p>
+	</div>
+	{{ page.content | number_of_words }}
 	<div>
 		<h2>
 			To-do List
