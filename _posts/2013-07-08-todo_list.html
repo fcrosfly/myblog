@@ -11,8 +11,13 @@ tags: demo to-do_list
 </head>
 <body>
 	<div id="article-info">
+		<p>
+{% highlight html %}
+
 		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
 		<p id="num-of-words">{{ page.content | number_of_words }}</p>
+{% endhighlight %}
+		</p>
 	</div>
 	<div>
 		<h2>
