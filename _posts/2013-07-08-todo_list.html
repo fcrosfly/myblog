@@ -2,7 +2,7 @@
 layout: 
 title: To-do List Demo
 category: demo
-tags: demo, to-do list
+tags: demo, to-do_list
 ---
 <html>
 <head>
@@ -14,7 +14,6 @@ tags: demo, to-do list
 		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
 		<p id="num-of-words">{{ page.content | number_of_words }}</p>
 	</div>
-	{{ page.content | number_of_words }}
 	<div>
 		<h2>
 			To-do List
