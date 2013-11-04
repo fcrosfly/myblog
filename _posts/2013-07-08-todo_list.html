@@ -3,6 +3,8 @@ layout:
 title: To-do List Demo
 category: demo
 tags: demo to-do_list
+prev_section: extras
+next_section: deployment-methods
 ---
 <html>
 <head>
@@ -14,13 +16,11 @@ tags: demo to-do_list
 	<div id="article-info">
 		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
 		<p id="num-of-words">{{ page.content | number_of_words }}</p>
-		<p>
-{% highlight html %}
+{% highlight ruby %}
 def foo
   puts 'foo'
 end
 {% endhighlight %}
-		</p>
 	</div>
 	<div>
 		<h2>
