@@ -10,17 +10,16 @@ next_section: deployment-methods
 <head>
 	<title>Todo List | demo</title>
 	<link type="text/css" rel="stylesheet" href="/myblog/css/todo_list.css" />
-	<link type="text/css" rel="stylesheet" href="/myblog/css/prettify.css">
-</head>
+	<link type="text/css" rel="stylesheet" href="/myblog/css/prettify.css"></head>
 <body>
 	<div id="article-info">
 		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
 		<p id="num-of-words">{{ page.content | number_of_words }}</p>
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+		<pre class="prettyPrint">
+		def foo
+		  puts 'foo'
+		end
+		</pre>
 	</div>
 	<div>
 		<h2>
@@ -50,5 +49,6 @@ end
 	<!--<script type="text/javascript" src="demo.js"></script>
 -->
 <script type="text/javascript" src="/myblog/js/google-code-prettify/prettify.js"></script>
+<script>prettyPrint();</script>
 </body>
 </html>
