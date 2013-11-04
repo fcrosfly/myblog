@@ -13,12 +13,10 @@ next_section: deployment-methods
 	<link type="text/css" rel="stylesheet" href="/myblog/css/prettify.css"></head>
 <body>
 	<div id="article-info">
+
+		<pre class="prettyPrint">
 		<p id="tags">{{ page.tags | array_to_sentence_string }}</p>
 		<p id="num-of-words">{{ page.content | number_of_words }}</p>
-		<pre class="prettyPrint">
-		def foo
-		  puts 'foo'
-		end
 		</pre>
 	</div>
 	<div>
