@@ -9,7 +9,7 @@ title:
 	{% for post in site.posts %}
 	{% if post.tags contains "随记" %}
 	<li class="post-title">
-		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> >> </span>
+		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
 		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
 	</li>
 	{% endif %}
@@ -21,7 +21,19 @@ title:
 	{% for post in site.posts %}
 	{% if post.tags contains "css学习笔记" %}
 	<li class="post-title">
-		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> >> </span>
+		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
+		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>
+
+<h2>CSS学习笔记</h2>
+<ul>
+	{% for post in site.posts %}
+	{% if post.tags contains "css学习笔记" %}
+	<li class="post-title">
+		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
 		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
 	</li>
 	{% endif %}
@@ -30,20 +42,19 @@ title:
 
 <h2>Demo</h2>
 <div class="demo">
-	<p data-height="220" data-theme-id="2162" data-slug-hash="Kgicd" data-user="YvonneZhang" data-default-tab="result" class='codepen'>
-		See the Pen
-		<a href='http://codepen.io/YvonneZhang/pen/Kgicd'>Checkout Button</a>
-		by Yvonne Zhang (
-		<a href='http://codepen.io/YvonneZhang'>@YvonneZhang</a>
-		) on
-		<a href='http://codepen.io'>CodePen</a>
-	</p>
-	<p data-height="268" data-theme-id="2162" data-slug-hash="exFdc" data-user="YvonneZhang" data-default-tab="result" class='codepen'>
-		See the Pen
-		<a href='http://codepen.io/YvonneZhang/pen/exFdc'>Simple CSS to-do list</a>
-		by Yvonne Zhang (
-		<a href='http://codepen.io/YvonneZhang'>@YvonneZhang</a>
-		) on
-		<a href='http://codepen.io'>CodePen</a>
-	</p>
+	<div>
+		<h3 class="demo-title">Simple CSS to-do list</h3>
+		<p class="explaination">A very simple CSS to-do list. A lot of work undone.</p>
+		<iframe src="http://codepen.io/YvonneZhang/full/btaLn"></iframe>
+	</div>
+	<div>
+		<h3 class="demo-title">Checkout Button</h3>
+		<p class="explaination">Use CSS properties alone.</p>
+		<iframe src="http://codepen.io/YvonneZhang/full/Kgicd"></iframe>
+	</div>
+	<div>
+		<h3 class="demo-title">Positioning - CSS Exercise</h3>
+		<p class="explaination">Exercise of CSS Mastery Chapter 3.</p>
+		<iframe src="http://codepen.io/YvonneZhang/full/wcCHg"></iframe>
+	</div>
 </div>
