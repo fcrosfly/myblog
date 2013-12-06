@@ -7,7 +7,7 @@ title:
 <ul>
 	{％ for category in site.categories ％}
 	<li>
-	<a href="/｛｛ category | first ｝｝.html">｛｛ category | first ｝｝(｛｛ category | last | size ｝｝)</a>
+	<a href="/｛｛ category | first ｝｝.html">{{category | first}} ({{category | last | size }})</a>
 	</li>
 	{％ endfor ％}
 	{% for post in site.posts %}
