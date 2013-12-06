@@ -140,7 +140,7 @@ li.post-title{
 }
 
 .demo iframe{
-    margin-top:20px;
+    margin: 20px 0px;
     width: 100%;
     height: 250px;
     border: dashed #ddd 1px;
