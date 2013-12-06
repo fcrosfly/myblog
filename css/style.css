@@ -124,6 +124,29 @@ li.post-title{
     list-style: none;
 }
 
+
+/* =Demo
+-----------------------------------------------------------------------------*/
+.demo-title{
+    border-left: 4px solid #D1D1D1;
+    margin-top: 1em;
+    padding-left: 1.4em;
+    padding-top: 0em;
+}
+
+.explaination{
+    font-size: 80%;
+    color: #CCCCCC;
+}
+
+.demo iframe{
+    margin-top:20px;
+    width: 100%;
+    height: 250px;
+    border: dashed #ddd 1px;
+}
+
+
 /* =Footer
 -----------------------------------------------------------------------------*/
 
@@ -196,12 +219,6 @@ div.brief-profile{
     text-align:center;
     margin:4%;
     line-height:2em;   
-}
-
-div.demo img{
-    margin: 24px;
-    width: 256px;    
-    border-radius: 6px;    
 }
 
 
