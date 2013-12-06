@@ -110,13 +110,13 @@ div#page{
     box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
 }
 
-p.sub-title{
+.sub-title{
     border-left: 4px solid #D1D1D1;
     margin-top: 1em;
     padding-top: 0em;
 }
 
-span.post-date{
+.post-date{
     font-family: Menlo, Monaco, 'Andale Mono', 'lucida console', 'Courier New', monospace;
 }
 
