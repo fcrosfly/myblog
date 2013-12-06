@@ -5,9 +5,10 @@ title:
 <h1 id="index-title">Yvonne Zhang: 深思考，多践行</h1>
 <h2>最新文章</h2>
 <ul>
-	{% for category in site.categories %}
+	{% for category in site.categories.随记 %}
 	<li>
-	<a href="/{{category | first }}.html">{{ category|first }} ({{ category|last|size }})</a>
+		{{ post.date | date_to_string }}
+		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
 	</li>
 	{% endfor %}
 	{% for post in site.posts %}
