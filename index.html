@@ -19,7 +19,7 @@ title:
 <h2>CSS学习笔记</h2>
 <ul>
 	{% for post in site.posts %}
-	{% if post.tags contains "css学习笔记" %}
+	{% if post.tags contains "CSS学习笔记" %}
 	<li class="post-title">
 		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
 		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
