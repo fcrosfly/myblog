@@ -18,29 +18,28 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	vertical-align: baseline;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
 html {
-	font-size: 100%; 
-	overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%; 
+    font-size: 100%; 
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; 
 }
 
 body{
-	background-color: #EBEBEB;
+    background-color: #EBEBEB;
     font-family: 'Microsoft Yahei', 'Microsoft Jhenghei', STHeiti, PMingLiU, Simsun;
 }
-
 
 article,
 aside,
@@ -52,20 +51,20 @@ header,
 hgroup,
 nav,
 section {
-	display: block;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color:       #222;
-	font-weight: 600;
+    color:       #222;
+    font-weight: 600;
 }
 
 h1 {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 h2 {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 p{
@@ -121,6 +120,10 @@ span.post-date{
     font-family: Menlo, Monaco, 'Andale Mono', 'lucida console', 'Courier New', monospace;
 }
 
+li.post-title{
+    list-style: none;
+}
+
 /* =Footer
 -----------------------------------------------------------------------------*/
 
@@ -140,24 +143,25 @@ span.post-date{
 }
 
 #index-title{
-	margin-bottom: 20px;
-	border-bottom: 1px dashed #ebebeb;
-	padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ebebeb;
+    padding-bottom: 20px;
 }
 
 /* =Sidebar
 -----------------------------------------------------------------------------*/
 
 div#sidebar{
-	position: fixed;
-	display: block;
-	width: 30%;
-	top: 40px;
-	right: 4%;
-	background-color: #fff;
-	border-radius: 10px;
-	-webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
-	box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+    position: fixed;
+    float:right;
+    display: inline-block;
+    width: 30%;
+    top: 40px;
+    right: 4%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
+    box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 6px 0px;
 }
 
 #photo{
@@ -181,6 +185,7 @@ div#sidebar{
     -webkit-transform:scale(1.05);
     transform:scale(1.05);
 }
+
 div.sidebar-title{
     padding: 3% 5%;
     border-bottom: 1px dashed #ebebeb;
