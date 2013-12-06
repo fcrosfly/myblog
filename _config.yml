@@ -1,2 +1,3 @@
 baseurl: /myblog
 auto: true
+pygments: true
