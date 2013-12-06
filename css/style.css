@@ -120,6 +120,10 @@ span.post-date{
     font-family: Menlo, Monaco, 'Andale Mono', 'lucida console', 'Courier New', monospace;
 }
 
+span.arrow{
+    color: #ccc;
+}
+
 li.post-title{
     list-style: none;
 }
