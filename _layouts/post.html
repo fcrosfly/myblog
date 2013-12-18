@@ -35,9 +35,10 @@
         <h2 class="title">{{ page.title }}</h2>
         <div id="navigation">
             <a href="http://yvonnezhang.github.io/myblog/">Home</a>
-            &gt;{{ page.tags }}
+            <span class="arrow">&gt;</span>
+            <span class="tags">{{ page.tags }}</span>
+            <span class="post-date">{{ page.date | date_to_string }}</span>
         </div>
-        <p class="post-date">{{ page.date | date_to_string }}</p>
         {{ content }}
         <div id="disqus_thread"></div>
         <script type="text/javascript">
