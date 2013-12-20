@@ -9,7 +9,7 @@ title:
 	{% for post in site.posts %}
 	{% if post.tags contains "随记" %}
 	<li class="post-title">
-		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
+		<span class="post-date">{{ post.date | date:"%Y-%m-%d" }}</span> <span class="arrow"> > </span>
 		<a href="{{ site.baseurl }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
 	</li>
 	{% endif %}
