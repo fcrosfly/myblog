@@ -173,31 +173,22 @@ div.brief-profile {
 }
 /* =ToTop
 -----------------------------------------------------------------------------*/
- div#top {
+ div#top a {
     display: block;
     position: fixed;
-    bottom: -41px;
-    right: -38px;
-    width: 88px;
-    height: 88px;
-    border-radius: 200px;
-    background: rgba(255, 255, 255, .5);
-    transition: 0.2s ease;
-    -webkit-transition: 0.2s ease;
-}
-div#top:hover {
-    background: rgb(255, 255, 255);
-}
-div#top a {
-    position: absolute;
-    top: 22px;
-    left: 6px;
-    background-color: rgba(255, 255, 255, 0);
+    bottom: 10px;
+    right: 10px;
+    height: 30px;
+    width: 20px;
+    padding-top:10px;
+    background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
     font-weight: bold;
-    text-shadow: 0px 0px 1px #b1b1b1;
+    text-align: center;
 }
 div#top a:hover {
+    transition: 0.2s ease-in;
+    background: rgba(255, 255, 255, 0.8);
     color: #999999;
 }
 /* =Disqus
@@ -223,4 +214,3 @@ div#top a:hover {
 }
 /* =For Responsive
 -----------------------------------------------------------------------------*/
-
