@@ -1,6 +1,5 @@
 ---
 layout: default
-title: 
 ---
 <h1 id="index-title">Yvonne Zhang: 空空如也</h1>
 
@@ -8,6 +7,18 @@ title:
 <ul>
 	{% for post in site.posts %}
 	{% if post.tags contains "随记" %}
+	<li class="post-title">
+		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
+		<a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>
+
+<h2>一天一本书</h2>
+<ul>
+	{% for post in site.posts %}
+	{% if post.tags contains "一天一本书" %}
 	<li class="post-title">
 		<span class="post-date">{{ post.date | date_to_string }}</span> <span class="arrow"> > </span>
 		<a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
