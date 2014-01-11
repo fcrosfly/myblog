@@ -113,6 +113,35 @@ li.post-title {
     height: 250px;
     border: dashed #ddd 1px;
 }
+blockquote {
+    position: relative;
+    margin: 30px 14px;
+    padding: 50px;
+    background: #eee;
+    border-radius:20px;
+}
+blockquote:before {
+    display:block;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    content:'“';
+    font-family: Georgia;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 1px 1px #ccc;
+}
+blockquote:after {
+    display:block;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    content:'”';
+    font-family: Georgia;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 1px 1px #ccc;
+}
 /* =Footer
 -----------------------------------------------------------------------------*/
  #footer {
