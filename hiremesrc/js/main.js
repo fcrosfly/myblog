@@ -185,7 +185,7 @@ function changeProjInfo(currentIndex) {
             break;
         case 1:
             projectTitle = '个人博客';
-            skillTag = 'HTML, CSS, Native JavaScript, GitHub';
+            skillTag = 'HTML, CSS, Native JavaScript, GitHub, Jekyll';
             projectContent = '独立完成了设计与开发';
             projectUrl = '<a href="http://yvonnezhang.github.io/myblog">http://yvonnezhang.github.io/myblog</a>';
             break;
