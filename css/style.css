@@ -95,6 +95,17 @@ span.arrow {
 li.post-title {
     list-style: none;
 }
+/* =My Resume Ribbon
+-----------------------------------------------------------------------------*/
+ #myResumeRibbon {
+    position: fixed;
+}
+.right .github-fork-ribbon {
+    background-color: #99cc33;
+}
+.right .github-fork-ribbon a {
+    background-color: #99cc33;
+}
 /* =Demo
 -----------------------------------------------------------------------------*/
  .demo-title {
