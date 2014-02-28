@@ -1,0 +1,594 @@
+/*
+Description: css for my resume
+Author: 张艺帆 Yvonne Zhang
+Author URI: http://yvonnezhang.github.io/myblog/
+*/
+
+/* = set font
+-------------------------------------------------------------- */
+ @font-face {
+    font-family:'RaphaelIcons';
+    src: url('../iconfont/raphaelicons-webfont.eot');
+    src: local('☺'), url('../iconfont/raphaelicons-webfont.woff') format('woff'), url('../iconfont/raphaelicons-webfont.ttf') format('truetype'), url('../iconfont/raphaelicons-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =Reset
+-------------------------------------------------------------- */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    position: relative;
+    font-family:'Microsoft Yahei', 'Microsoft Jhenghei', STHeiti, PMingLiU, Simsun;
+    background-size: 100% 100%, 100px 100px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+ul {
+    line-height: 1.5em;
+    margin: 1em 3em;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0px 5px 3px 0px;
+    -webkit-transition: color .25s ease-out, border-bottom-color .15s ease-in;
+    -moz-transition: color .25s ease-out, border-bottom-color .15s ease-in;
+    -o-transition: color .25s ease-out, border-bottom-color .15s ease-in;
+    transition: color .25s ease-out, border-bottom-color .15s ease-in;
+}
+a[href] {
+    border-bottom: dashed 2px #FFF;
+}
+a:hover {
+    color: #FFF;
+    border-bottom-color: #000;
+}
+/* = personalInfo
+-----------------------------------------------------------------------------*/
+ #personalInfo {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    background-color: #99CC33;
+    color: #fff;
+}
+#downloadPdf {
+    position: fixed;
+    top: 20px;
+    right: -25px;
+    height: 40px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    -webkit-transition:ease 0.5s;
+    -moz-transition:ease 0.5s;
+    -o-transition:ease 0.5s;
+    transition:ease 0.5s;
+}
+/*#downloadPdf:hover {
+    right: -25px;
+    background-color: #000;
+}*/
+ #downloadPdf a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -4px;
+    left: 0px;
+    padding-left: 18px;
+    border-bottom: 0px;
+    color: #99CC33;
+}
+/*#downloadPdf a:hover {
+    color: #FFF;
+}*/
+ #downloadPdf a span {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: -10px;
+    font-family:"RaphaelIcons";
+    font-size: 36px;
+    -webkit-transition:ease 0.9s;
+    -moz-transition:ease 0.9s;
+    -o-transition:ease 0.9s;
+    transition:ease 0.9s;
+}
+/*
+#downloadPdf a span:hover {
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}*/
+
+/* = basicInfo
+-----------------------------------------------------------------------------*/
+ #basicInfo {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    width: 300px;
+    font-size: 16px;
+    color: #000;
+}
+#basicInfo span {
+    line-height: 30px;
+    padding-right: 6px;
+    font-size: 18px;
+    color: #fff;
+}
+#desc {
+    display: block;
+    margin-top: 30px;
+}
+#desc span {
+    display: inline-block;
+    padding: 10px 0px 16px 66px;
+    font-size: 24px;
+    color: #fff;
+}
+/* = photo
+-----------------------------------------------------------------------------*/
+ #photo {
+    width: 186px;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
+}
+#photo img {
+    width: 180px;
+    height: 180px;
+    border:3px solid #fff;
+    -webkit-border-radius:100%;
+    border-radius:100%;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition:ease 0.5s;
+    -moz-transition:ease 0.5s;
+    -o-transition:ease 0.5s;
+    transition:ease 0.5s;
+}
+#photo img:hover {
+    -webkit-transform:scale(1.02);
+    -moz-transform:scale(1.02);
+    -o-transform:scale(1.02);
+    transform:scale(1.02);
+}
+#name {
+    position: absolute;
+    top: 212px;
+    left: 42px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+/* = contactMe
+-----------------------------------------------------------------------------*/
+ #contactMe {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+}
+#contactMe div {
+    display: block;
+    height: 50px;
+    font-size: 18px;
+    text-align: right;
+}
+#contactMe span {
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    color: #FFF;
+}
+.icon {
+    font-family:'RaphaelIcons';
+    font-size: 36px;
+}
+.tel:before {
+    content:'Û';
+}
+.gmail:before {
+    content:'M';
+}
+.github:before {
+    content:'U';
+}
+.blog:before {
+    content:'5';
+}
+/* = experiences
+-----------------------------------------------------------------------------*/
+ #experiences {
+    position: relative;
+    margin-top: 390px;
+    height: 520px;
+    display: block;
+}
+.experiences-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    background-color: #F0F0F0;
+    border-top-right-radius: 60px;
+}
+.experiences-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    background-color: #F0F0F0;
+    border-top-left-radius: 60px;
+}
+.experiences-inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.line {
+    position: relative;
+    width: 2px;
+    height: 400px;
+    top: 60px;
+    margin: 0 auto;
+    background-color: #99CC33;
+}
+.line-extended {
+    position: relative;
+    top: 60px;
+    width: 0px;
+    height: 60px;
+    margin: 0 auto;
+    border: 1px dashed #99CC33;
+}
+.node {
+    position: relative;
+    margin: 0 auto;
+    width: 14px;
+    height: 14px;
+    background-color: #99CC33;
+    border-radius: 100%;
+    -webkit-border-radius:100%;
+    border: #F0F0F0 solid 4px;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition:ease-out 0.3s;
+    -moz-transition:ease-out 0.3s;
+    -o-transition:ease-out 0.3s;
+    transition:ease-out 0.3s;
+}
+.node:hover {
+    background-color: #F0F0F0;
+    border: #99CC33 solid 4px;
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    transform:scale(1.5);
+}
+#node1 {
+    top: -410px;
+}
+#node2 {
+    top: -340px;
+}
+#node3 {
+    top: -260px;
+}
+#node4 {
+    top: -186px;
+}
+#node5 {
+    top: -110px;
+}
+.event {
+    position: absolute;
+    width: 340px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.event.event-left {
+    right: 600px;
+    text-align: right;
+}
+.event.event-right {
+    left: 600px;
+    text-align: left;
+}
+#event1 {
+    top: 80px;
+}
+#event2 {
+    top: 172px;
+}
+#event3 {
+    top: 270px;
+}
+#event4 {
+    top: 370px;
+}
+#event5 {
+    top: 467px;
+}
+.event span {
+    display: block;
+    margin: 6px 0px;
+}
+.event.event-right span {
+    position: relative;
+    left: 0px;
+}
+.event.event-left span {
+    position: relative;
+    right: 0px;
+}
+.company {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+.location {
+    position: absolute !important;
+}
+.icon.location {
+    font-size: 28px;
+}
+.icon.location:before {
+    content:'o';
+}
+#loacationIconLeft {
+    position: absolute;
+    top: -36px;
+    right: 160px;
+}
+#loacationIconRight {
+    position: absolute;
+    top: -36px;
+    left: 160px;
+}
+#locationLeft {
+    position: absolute;
+    top: -34px;
+    right: 180px;
+}
+#locationRight {
+    position: absolute;
+    top: -34px;
+    left: 180px;
+}
+#date {
+    position: absolute;
+    top: -40px;
+    width: 100px;
+    line-height: 34px;
+    padding: 0px 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-family:'monospace', 'Courier New';
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #99CC33;
+    color: #FFF;
+}
+#arrow-left {
+    position: absolute;
+    display: block;
+    left: -13px;
+    top: -39px;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 15px solid #99CC33;
+}
+#arrow-right {
+    position: absolute;
+    display: block;
+    right: -13px;
+    top: -39px;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 15px solid #99CC33;
+}
+/* = skills
+-----------------------------------------------------------------------------*/
+ #skills {
+    position: relative;
+    height: 600px;
+    display: block;
+    background: #fff;
+}
+.skills-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+#skills-title {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    font-size: 70px;
+    letter-spacing: 4px;
+}
+#legend {
+    position: absolute;
+    top: 90px;
+    left: 467px;
+}
+#legend div {
+    height: 30px;
+    margin-right: 36px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#legend div span {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.skill-block {
+    width: 32%;
+    margin-top: 168px;
+    float: left;
+    font-size: 15px;
+}
+.skill-block div {
+    width: 84%;
+    margin: 0 auto;
+}
+.skill-block div div {
+    position: relative;
+    margin: 28px 0px;
+    padding: 3px 14px;
+    border-radius: 10px;
+    color: #FFF;
+}
+.skill-block div div span {
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    height: 100%;
+    background-color: #EAEAEA;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.css div, .css span {
+    background-color: #F7464A;
+}
+.html div, .html span {
+    background-color: #FDB45C;
+}
+.javascript div, .javascript span {
+    background-color: #46BFBD;
+}
+.backend div, .backend span {
+    background-color: #949FB1;
+}
+.others div, .others span {
+    background-color: #4D5360;
+}
+/* = projects
+-----------------------------------------------------------------------------*/
+ #projects {
+    position: relative;
+    height: 800px;
+    display: block;
+    margin-top: -20px;
+    background-color: #99CC33;
+}
+#projects .projects-line {
+    position: absolute;
+    top: 10%;
+    width: 4px;
+    height: 80%;
+    left: 245px;
+    background-color: #FFF;
+}
+#projects ul {
+    position: relative;
+    list-style: none;
+    top: 60px;
+    margin: 0 auto;
+    width: 70%;
+}
+#projects ul li {
+    margin-bottom: 45px;
+}
+#projects ul li div.project-duration {
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 6px;
+    width: 110px;
+    height: 90px;
+}
+#projects ul li div.project-duration span {
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    font-family:"Monaco", "Consolas", "Lucida Console", "monospace";
+    color: #99CC33;
+    font-size: 13px;
+}
+#projects ul li div.project-duration span[class] {
+    font-weight: bolder;
+    font-size: 16px;
+}
+#projects ul li div.projectDesc {
+    display: inline-block;
+    margin-left: 80px;
+}
+#projects ul li div.projectDesc div {
+    margin: 5px 0px;
+}
+#projects ul li div.projectDesc div.project-title {
+    margin: 8px 0px;
+    color: #FFF;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+#projects ul li div.projectDesc div span {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+#projects ul li div.projectDesc div span.label {
+    margin-right: 10px;
+    text-align: center;
+}
+.projectDesc div span.content {
+    /*width: 400px;*/
+    text-align: left;
+}
+/* = footer
+-----------------------------------------------------------------------------*/
+ #footer {
+    position: relative;
+    height: 40px;
+    padding-top: 20px;
+    display: block;
+    background: #000;
+    color: #EEE;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#footer span.emphasize{
+    color: #99CC33;
+}
